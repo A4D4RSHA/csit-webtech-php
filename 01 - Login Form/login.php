@@ -22,8 +22,9 @@ if (empty($username) || empty($password)) {
 // Check for Login
 $sql = "SELECT * FROM `users` WHERE `username` = '$username' AND `password` = '$password'";
 $result = mysqli_query($conn, $sql);
+$count = mysqli_num_rows($result);
 
-if ($result) {
+if ($count == 1) {
     echo "Login Successful!";
 } else {
     echo "Cannot Login! Please try again!";

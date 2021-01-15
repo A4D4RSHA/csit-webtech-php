@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Data Form</title>
+  </head>
+
+  <body>
+    <form action="save.php" onsubmit="return validate()" method="post">
+      <div>
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" id="first_name" />
+      </div>
+
+      <div>
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" id="last_name" />
+      </div>
+
+      <div>
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" />
+      </div>
+
+      <input type="submit" value="Save" />
+    </form>
+
+    <script>
+      function validate() {
+        // Check Empty Name
+        if (document.getElementById("first_name").value == "") {
+          alert("Please provide your first name!");
+          return false;
+        }
+
+        if (document.getElementById("last_name").value == "") {
+          alert("Please provide your last name!");
+          return false;
+        }
+
+        // Check Empty Name
+        if (document.getElementById("address").value == "") {
+          alert("Please provide your address!");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </body>
+</html>

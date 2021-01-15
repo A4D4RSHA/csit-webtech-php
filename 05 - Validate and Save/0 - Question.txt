@@ -1,0 +1,5 @@
+2075
+
+Develop a simple Web site that takes first name, last name and address from the user
+and stores this information in the database.
+Use JavaScript to validate form data.

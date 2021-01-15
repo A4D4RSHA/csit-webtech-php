@@ -1,0 +1,5 @@
+2074
+
+Construct a web page that takes name, address, and phone number from the user 
+and stores this information in the database using server side script.
+Use JavaScript to validate form data for phone number.

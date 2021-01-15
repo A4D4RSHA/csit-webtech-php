@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Login Form</title>
+  </head>
+
+  <body>
+    <h1>Login Form</h1>
+    <form action="login.php" onsubmit="return validate()" method="post">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+
+      <input type="submit" value="Login" />
+    </form>
+
+    <script>
+      function validate() {
+        // Check Empty Username
+        if (document.getElementById("username").value == "") {
+          alert("Please provide your username!");
+          return false;
+        }
+
+        // Check Empty Password
+        if (document.getElementById("password").value == "") {
+          alert("Please provide your password!");
+          return false;
+        }
+
+        // Check Password Length
+        if (document.getElementById("password").value.length < 8) {
+          alert("Password must be 8 characters or more!");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </body>
+</html>

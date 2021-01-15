@@ -1,0 +1,5 @@
+Model Question
+
+Prepare a form that should contain text box, selection list and radio button.
+Write PHP script to store data from the form into database using database connection
+and appropriate query.

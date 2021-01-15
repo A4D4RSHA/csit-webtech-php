@@ -1,0 +1,5 @@
+2076
+
+Prepare a form that should contain text box for name and email, selection list for country.
+Write a server side script to store data from the form into database.
+The script should contain connection to database and appropriate query into the database.

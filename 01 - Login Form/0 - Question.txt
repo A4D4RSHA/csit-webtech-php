@@ -1,0 +1,5 @@
+2071
+
+Develop a website that checks validity of a user during the log-in process.
+Assume that the login data (username and password) are already stored in a database.
+Use client-side script to validate the user input during login.

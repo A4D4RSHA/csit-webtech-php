@@ -1,0 +1,5 @@
+2071-II
+
+Develop a simple website that asks the users to register using username, password, and email address.
+Store these information’s in a database.
+Use client side script to validate the user input during registration.
